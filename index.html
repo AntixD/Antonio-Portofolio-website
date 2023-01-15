@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/b112bf6709.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./submit.js"></script>
     <title>Anica moja ❤️</title>
   </head>
   <body>
@@ -220,7 +221,7 @@
             >
           </div>
           <div class="contact-right">
-            <form name="submit-to-google-sheet">
+            <form action="https://formsubmit.co/antonio.dedic123@gmail.com" method="POST">
               <input type="text" name="name" placeholder="Your Name" required />
               <input type="email" name="email" placeholder="Your Email" />
               <textarea
@@ -236,36 +237,7 @@
       </div>
       <div class="copyright">
         <p>Copyright © Anti. Made by Antonio Dedić</p>
-      </div>
-    
-    
-    
-    
-    
-    <!--------JS FOR SUBMITING THE MASSAGE------->
-    
-    
-    
-    
-    
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbxPz1YVWAzrz2lG9jtEYoBCYTgCzN8LFhbYV9N7ZJtiCZG5KOYCrMMlL_9YEjYF0Sou/exec'
-      const form = document.forms['submit-to-google-sheet']
-      const msg = document.getElementById("msg")
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then(response => {
-            msg.innerHTML = "Message sent successfully"
-            setTimeout(function() {
-              msg.innerHTML = ""
-            },5000)
-            form.reset()
-          })
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
+      </div>  
     
 
     <script src="./app.js"></script>
