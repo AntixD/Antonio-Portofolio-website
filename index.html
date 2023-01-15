@@ -8,6 +8,7 @@
     <title>Anica moja ❤️</title>
   </head>
   <body>
+    <!------- HEADING START ------->
     <div id="header">
       <div class="container">
         <nav>
@@ -29,5 +30,61 @@
         </div>
       </div>
     </div>
+    <!------- HEADING END ------->
+    <!------- ABOUT SECTION START ------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
+              deleniti accusamus fugit? Animi aspernatur consectetur expedita
+              ea, dicta vitae eaque nostrum nisi harum corporis ipsa quibusdam
+              deleniti, blanditiis, obcaecati praesentium asperiores sint
+              aliquid quae amet! Consequuntur atque ducimus nam. Corporis ea
+              voluptas voluptatum numquam dolorum velit vel earum incidunt
+              totam!
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Front-end</span><br />Web Developer</li>
+                <li><span>Front-end</span><br />Web Developer</li>
+                <li><span>Front-end</span><br />Web Developer</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>Front-end</span><br />Web Developer</li>
+                <li><span>Front-end</span><br />Web Developer</li>
+                <li><span>Front-end</span><br />Web Developer</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Front-end</span><br />Web Developer</li>
+                <li><span>Front-end</span><br />Web Developer</li>
+                <li><span>Front-end</span><br />Web Developer</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
   </body>
 </html>
